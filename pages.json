@@ -1,0 +1,108 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				},
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#ffd655"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+
+		}
+
+	    ,{
+            "path" : "pages/registLogin/registLogin",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/meInfo/meInfo",
+            "style" : {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#ffd655"
+			}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/meface/meface",
+            "style" : {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "头像上传",
+				"navigationBarBackgroundColor": "#ffd655"
+			}
+        }
+        ,{
+            "path" : "pages/msg/msg",
+            "style" : {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "消息",
+				"navigationBarBackgroundColor": "#ffd655"
+			}
+        }
+        ,{
+            "path" : "pages/businessApproval/businessApproval",
+            "style" : {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "审批",
+				"navigationBarBackgroundColor": "#ffd655"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+		// "navigationStyle": "custom"
+	},
+   "tabBar" : {
+		"color" : "#bfbfbf",
+		"selectedColor" : "#515151",
+		"borderStyle" : "black",
+		"backgroundColor" : "#ffffff",
+		"list" : [
+			
+			{
+				"pagePath" : "pages/index/index",
+				"text" : "首页",
+				"iconPath" : "static/tabBarIco/index.png",
+				"selectedIconPath" : "static/tabBarIco/index_sel.png"
+			},
+			{
+				"pagePath" : "pages/msg/msg",
+				"text" : "消息",
+				"iconPath" : "static/icos/icon-item-004.png",
+				"selectedIconPath" : "static/icos/icon-item-004.png"
+			},
+			{
+				"pagePath" : "pages/login/login",
+				"text" : "我的",
+				"iconPath" : "static/tabBarIco/me.png",
+				"selectedIconPath" : "static/tabBarIco/me_sel.png"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

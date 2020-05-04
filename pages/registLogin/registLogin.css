@@ -1,0 +1,111 @@
+/* 整体页面设置 */
+.body {
+	border-top: solid 1px #DBDBDA;
+	padding: 0 40upx;
+}
+
+/* 头像 start */
+/* 头像外壳 */
+.face-wapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	margin-top: 120upx;
+	margin-bottom: 120upx;
+}
+/* 头像 */
+.face {
+	width: 160upx;
+	height: 160upx;
+}
+/* 头像 end */
+
+/* 注册登录 start */
+/* 注册外壳 */
+.info-wapper {
+	display: flex;
+	/* flex布局：水平 居中 */
+	flex-direction: row;
+	justify-content: center;
+	
+	/* 底部外框 */
+	border-bottom: solid 1px #DBDBDA;
+	
+	padding-bottom: 20upx;
+}
+/* 账户文字 */
+.words-lbl {
+	color: #808080;
+}
+/* 输入框 */
+.input {
+	width: 500upx;
+	margin-left: 40upx;
+}
+/* 默认输入文字 */
+.graywords {
+	color: #EAEAEA;
+}
+
+/* 注册登录 end */
+
+/* 第三方登录 start */
+.third-wapper {
+	width: 100%;
+	/* 固定底部 */
+	/* bottom: 0;
+	position: fixed; */
+	
+	margin-top: 60upx;
+	
+}
+
+.third-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: center
+}
+
+.third-words {
+	color: #A9A9A9;
+	font-size: 13px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.single-line {
+	padding: 15upx 20upx;
+	width: 25%;
+	align-items: center;
+}
+
+.third-icos-wapper {
+	margin-top: 30upx;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center
+}
+
+.third-ico {
+	width: 60upx;
+	height: 60upx;
+}
+
+.third-btn-ico {
+	background-image:url(http://122.152.205.72:88/group1/M00/00/05/CpoxxFxFO-yAOjTaAAATCIZEzRU503.png);
+	width: 60upx;
+	height: 60upx;
+	background-color: white;
+	background-size: 60upx 60upx;
+	background-repeat:no-repeat;
+	border:none;
+	padding: 0;
+}
+button::after{
+	border: none;
+}
+/* 第三方登录 end */
